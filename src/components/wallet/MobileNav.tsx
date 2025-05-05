@@ -15,7 +15,7 @@ const MobileNav = () => {
             <Wallet className="h-5 w-5 text-white" />
           </div>
           <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-primary">
-            Lumina
+            WAY
           </span>
         </Link>
         

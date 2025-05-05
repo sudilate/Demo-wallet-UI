@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 const Send = () => {
   const [recipient, setRecipient] = useState('');
   const [amount, setAmount] = useState('');
-  const [asset, setAsset] = useState('ETH');
+  const [asset, setAsset] = useState('WAY');
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -50,6 +50,7 @@ const Send = () => {
                     <SelectValue placeholder="Select asset" />
                   </SelectTrigger>
                   <SelectContent>
+                    <SelectItem value="WAY">WAY</SelectItem>
                     <SelectItem value="ETH">ETH</SelectItem>
                     <SelectItem value="USDC">USDC</SelectItem>
                     <SelectItem value="BTC">BTC</SelectItem>

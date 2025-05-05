@@ -12,7 +12,7 @@ const Savings = () => {
       description: 'Earn interest with the flexibility to withdraw anytime',
       apy: '4.5%',
       minDeposit: '0.1 ETH',
-      assets: ['ETH', 'USDC', 'BTC']
+      assets: ['WAY','ETH', 'USDC', 'BTC']
     },
     {
       id: '2',
@@ -20,7 +20,7 @@ const Savings = () => {
       description: 'Higher returns for locking your assets for a fixed period',
       apy: '8.2%',
       minDeposit: '1 ETH',
-      assets: ['ETH', 'USDC']
+      assets: ['WAY','ETH', 'USDC', 'BTC']
     },
     {
       id: '3',
@@ -28,7 +28,7 @@ const Savings = () => {
       description: 'Earn rewards by staking your assets to secure the network',
       apy: '5.8%',
       minDeposit: '32 ETH',
-      assets: ['ETH']
+      assets: ['WAY','ETH', 'USDC', 'BTC']
     }
   ];
 
