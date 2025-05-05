@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				wallet: {
+					purple: '#8B5CF6',
+					indigo: '#4F46E5',
+					teal: '#0EA5E9',
+					coral: '#F97316',
+					dark: '#1A1F2C',
+					light: '#E5DEFF',
 				}
 			},
 			borderRadius: {
@@ -84,11 +93,36 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-slow': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.8' },
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
+				'gradient-x': {
+					'0%, 100%': {
+						'background-size': '200% 200%',
+						'background-position': 'left center'
+					},
+					'50%': {
+						'background-size': '200% 200%',
+						'background-position': 'right center'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-slow': 'pulse-slow 3s ease-in-out infinite',
+				'float': 'float 6s ease-in-out infinite',
+				'gradient-x': 'gradient-x 8s ease infinite'
+			},
+			backgroundImage: {
+				'gradient-primary': 'linear-gradient(135deg, #8B5CF6 0%, #4F46E5 100%)',
+				'gradient-card': 'linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%)',
 			}
 		}
 	},
